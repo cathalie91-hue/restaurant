@@ -92,6 +92,7 @@ header {
     cursor: pointer;
 }
 
+
 .btn {
     width: 220px;
     height: 45px;
@@ -121,16 +122,69 @@ header {
 }
 
 .promotion {
-    margin-top: 100vh;
-    padding-top: 50px;
+    background-color: #fff;
+    padding: 60px 20px;
     text-align: center;
+    min-height: 100vh;
 }
 
 .promotion h2 {
-    font-size: 36px;
+    font-size: 48px;
     margin-bottom: 20px;
+    color: red;
+    background-color: black;
+    border-radius: 40px;
+    width: 300px;
+    margin: 0 auto 20px;
 }
 
 .promotion p {
-    font-size: 18px;
+    font-size: 20px;
+    color: #666;
+}
+
+.prom {
+    background-color: #fff;
+    background-size: 20px;
+    align-items: center;
+}
+
+.carousel {
+    margin: 100px auto;
+    width: 90%;
+    border: 5px solid #fff;
+    display: flex;
+    overflow-x: auto;
+    gap: 1em;
+}
+
+.carosel::-webkit-scrollbar {
+    display: none;
+}
+
+.group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    animation: spin 10s infinite linear;
+    padding-right: 1em;
+}
+
+.card {
+    flex: 0 0 5em;
+    height: 5em;
+    padding: 1em;
+    background: blueviolet;
+    font-size: 3rem;
+    border-radius: .2em;
+    text-align: center;
+    align-content: center;
+    height: 500px;
+    padding: 150px;
+}
+
+@keyframes spin {
+    from {translate: 0;}
+    to {translate: -100%;}
 }
